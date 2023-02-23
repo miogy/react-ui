@@ -32,16 +32,27 @@ function About() {
   };
   return (
     <>
-      <button type="button" onClick={() => setTab(0)}>
-        Step1
-      </button>
-      <button type="button" onClick={() => setTab(1)}>
-        Step2
-      </button>
-      <button type="button" onClick={() => setTab(2)}>
-        Step3
-      </button>
-      {tabComponents[tab]}
+      <div
+        style={{
+          width: "500px",
+          height: "300px",
+          paddingTop: "50px",
+          margin: "0 auto",
+        }}
+      >
+        <button type="button" onClick={() => setTab(0)}>
+          Step1
+        </button>
+        <button type="button" onClick={() => setTab(1)}>
+          Step2
+        </button>
+        <button type="button" onClick={() => setTab(2)}>
+          Step3
+        </button>
+        <div style={{ width: "100%", paddingTop: "20px" }}>
+          {tabComponents[tab]}
+        </div>
+      </div>
     </>
   );
 }

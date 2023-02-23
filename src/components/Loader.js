@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 function Loader() {
+  const [loader, setLoader] = useState(true);
+  setTimeout(() => {
+    setLoader(false);
+  }, 1000 * 3);
   return (
     <StyledLoder>
-      <div className="loader_container">
-        <div className="loading">
-          <span className="loader"> </span>
-        </div>
-      </div>
+      {loader && (
+        <>
+          <div className="loader_container">
+            <div className="loading">
+              <span className="loader"> </span>
+            </div>
+          </div>
+        </>
+      )}
     </StyledLoder>
   );
 }

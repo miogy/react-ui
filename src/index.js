@@ -7,6 +7,7 @@ import Dashboard from "./page/Dashboard";
 import About from "./page/About";
 import BigSpinner from "./components/BigSpinner";
 import App from "./App";
+import Login from "./page/Login";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
     ],
   },

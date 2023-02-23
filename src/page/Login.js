@@ -22,10 +22,14 @@ function Login() {
 
   return (
     <>
-      <section className="login_box">
+      <section
+        className="login_box"
+        style={{ width: "200px", height: "300px", margin: "0 auto" }}
+      >
         <form>
           <label htmlFor="email"> Email</label>
           <input
+            style={{ width: "100%" }}
             id="email"
             name="email"
             type="email"
@@ -39,6 +43,7 @@ function Login() {
 
           <label htmlFor="password">Password</label>
           <input
+            style={{ width: "100%" }}
             id="password"
             name="password"
             type="password"
@@ -50,21 +55,25 @@ function Login() {
           {errors && <p className="error">* {errors}</p>}
           {formData.email !== "" || formData.password !== "" ? (
             <>
-              <button type="button">Sign In</button>
+              <button
+                type="button"
+                style={{ width: "208px", marginTop: "20px" }}
+              >
+                Sign In
+              </button>
             </>
           ) : (
             <>
-              <button type="button" className="disabled" disabled>
+              <button
+                type="button"
+                className="disabled"
+                disabled
+                style={{ width: "208px", marginTop: "20px" }}
+              >
                 Sign In
               </button>
             </>
           )}
-
-          <p>
-            <span>회원 가입</span>
-            <span> | </span>
-            <span>비밀번호 재설정</span>
-          </p>
         </form>
       </section>
     </>

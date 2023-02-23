@@ -8,8 +8,15 @@ function NavBar() {
         <h1>Home</h1>
       </Link>
       <nav>
-        <Link to="/dashboard">dashboard</Link>
-        <Link to="/about">about</Link>
+        <Link to="/dashboard" style={{ marginRight: "20px" }}>
+          dashboard
+        </Link>
+        <Link to="/about" style={{ marginRight: "20px" }}>
+          about
+        </Link>
+        <Link to="/login" style={{ marginRight: "20px" }}>
+          login
+        </Link>
       </nav>
     </header>
   );

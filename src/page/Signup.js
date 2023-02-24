@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const initFormData = {
+  option: "",
   id: "",
   password: "",
   passwordCfm: "",
@@ -24,14 +25,14 @@ function Signup() {
           type="radio"
           name="option"
           value="1"
-          checked={formData.startup === "1"}
+          checked={formData.option === "1"}
         />
         <label htmlFor="option"> option 1 </label>
         <input
           type="radio"
           name="option"
           value="2"
-          checked={formData.startup === "2"}
+          checked={formData.option === "2"}
           onChange={handleChangeRadio}
           defaultChecked
         />
@@ -40,7 +41,7 @@ function Signup() {
           type="radio"
           name="option"
           value="3"
-          checked={formData.startup === "3"}
+          checked={formData.option === "3"}
           onChange={handleChangeRadio}
         />
         <label htmlFor="option"> option 3 </label>

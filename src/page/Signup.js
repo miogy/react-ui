@@ -68,7 +68,9 @@ function Signup() {
           onChange={handleChange}
         />
       </form>
-      {formData.id !== "" || formData.password !== "" ? (
+      {formData.id !== "" &&
+      formData.password !== "" &&
+      formData.passwordCfm !== "" ? (
         <>
           <button type="button">회원가입</button>
         </>

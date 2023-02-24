@@ -53,7 +53,7 @@ function Login() {
             onKeyDown={handleKeyDown}
           />
           {errors && <p className="error">* {errors}</p>}
-          {formData.email !== "" || formData.password !== "" ? (
+          {formData.email !== "" && formData.password !== "" ? (
             <>
               <button
                 type="button"

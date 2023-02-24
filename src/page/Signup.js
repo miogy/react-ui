@@ -15,12 +15,13 @@ function Signup() {
   return (
     <>
       <form>
-        <label>아이디</label>
-        <input type="text" onChange={handleChange} />
-        <label>비밀번호</label>
-        <input type="password" onChange={handleChange} />
-        <label>비밀번호 확인</label>
-        <input type="password" onChange={handleChange} />
+        {/* input type=file을 보내는 폼에 enctype="multipart/form-data" 속성을 넣어 줘야함 */}
+        <label htmlFor="id">아이디</label>
+        <input id="id" type="text" onChange={handleChange} />
+        <label htmlFor="password">비밀번호</label>
+        <input id="password" type="password" onChange={handleChange} />
+        <label htmlFor="passwordCfm">비밀번호 확인</label>
+        <input id="passwordCfm" type="password" onChange={handleChange} />
       </form>
     </>
   );

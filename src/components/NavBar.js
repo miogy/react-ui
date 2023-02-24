@@ -17,6 +17,9 @@ function NavBar() {
         <Link to="/login" style={{ marginRight: "20px" }}>
           login
         </Link>
+        <Link to="/signup" style={{ marginRight: "20px" }}>
+          signup
+        </Link>
       </nav>
     </header>
   );

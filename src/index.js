@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Dashboard from "./page/Dashboard";
+import Loaders from "./page/Loaders";
 import Tab from "./page/Tab";
 import BigSpinner from "./components/BigSpinner";
 import App from "./App";
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "dashboard",
-        element: <Dashboard />,
+        path: "loaders",
+        element: <Loaders />,
       },
       {
         path: "tab",

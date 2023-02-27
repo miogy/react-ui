@@ -8,8 +8,8 @@ function NavBar() {
         <h1>Home</h1>
       </Link>
       <nav>
-        <Link to="/dashboard" style={{ marginRight: "20px" }}>
-          dashboard
+        <Link to="/loaders" style={{ marginRight: "20px" }}>
+          Loaders
         </Link>
         <Link to="/tab" style={{ marginRight: "20px" }}>
           Tab

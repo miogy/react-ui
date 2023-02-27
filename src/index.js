@@ -9,12 +9,18 @@ import BigSpinner from "./components/BigSpinner";
 import App from "./App";
 import Login from "./page/Login";
 import Signup from "./page/Signup";
+import Home from "./page/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        index: true,
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "dashboard",
         element: <Dashboard />,

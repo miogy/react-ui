@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CountDown from "../hook/CountDown";
 
 export function Menu1() {
   return <> Step1. tab에 사용할 menu의 index별 컴포넌트를 담아준다.</>;
@@ -29,6 +30,7 @@ function Tab() {
     0: <Menu1 />,
     1: <Menu2 />,
     2: <Menu3 />,
+    3: <CountDown />,
   };
   return (
     <>
@@ -48,6 +50,9 @@ function Tab() {
         </button>
         <button type="button" onClick={() => setTab(2)}>
           Step3
+        </button>
+        <button type="button" onClick={() => setTab(3)}>
+          Count Down
         </button>
         <div style={{ width: "100%", paddingTop: "20px" }}>
           {tabComponents[tab]}

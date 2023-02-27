@@ -4,7 +4,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./page/Dashboard";
-import About from "./page/About";
+import Tab from "./page/Tab";
 import BigSpinner from "./components/BigSpinner";
 import App from "./App";
 import Login from "./page/Login";
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "about",
-        element: <About />,
+        path: "tab",
+        element: <Tab />,
       },
       {
         path: "login",

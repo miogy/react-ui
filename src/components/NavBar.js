@@ -11,8 +11,8 @@ function NavBar() {
         <Link to="/dashboard" style={{ marginRight: "20px" }}>
           dashboard
         </Link>
-        <Link to="/about" style={{ marginRight: "20px" }}>
-          about
+        <Link to="/tab" style={{ marginRight: "20px" }}>
+          Tab
         </Link>
         <Link to="/login" style={{ marginRight: "20px" }}>
           login

@@ -19,6 +19,7 @@ function Signup() {
   const handleChangeRadio = (name) => {
     setFormData((prev) => ({ ...prev, [name.target.name]: name.target.value }));
   };
+
   return (
     <StyledSignup>
       <div className="checkbox_radio">

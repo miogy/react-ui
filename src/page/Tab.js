@@ -22,7 +22,7 @@ export function Menu3() {
   );
 }
 
-function About() {
+function Tab() {
   const [tab, setTab] = useState(0);
 
   const tabComponents = {
@@ -57,4 +57,4 @@ function About() {
   );
 }
 
-export default About;
+export default Tab;

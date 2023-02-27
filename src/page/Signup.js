@@ -10,8 +10,6 @@ const initFormData = {
 
 function Signup() {
   const [formData, setFormData] = useState(initFormData);
-  const [idError, setIdError] = useState("");
-  const [pwError, setPwError] = useState("");
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -21,6 +19,7 @@ function Signup() {
   const handleChangeRadio = (name) => {
     setFormData((prev) => ({ ...prev, [name.target.name]: name.target.value }));
   };
+
   return (
     <StyledSignup>
       <div className="checkbox_radio">

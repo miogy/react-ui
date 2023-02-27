@@ -10,6 +10,8 @@ const initFormData = {
 
 function Signup() {
   const [formData, setFormData] = useState(initFormData);
+  const [idError, setIdError] = useState("");
+  const [pwError, setPwError] = useState("");
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));

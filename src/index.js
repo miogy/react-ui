@@ -10,7 +10,7 @@ import App from "./App";
 import Login from "./page/Login";
 import Signup from "./page/Signup";
 import Home from "./page/Home";
-import RoomList from "./page/RoomList";
+import DataList from "./page/DataList";
 
 const router = createBrowserRouter([
   {
@@ -39,8 +39,8 @@ const router = createBrowserRouter([
         element: <Signup />,
       },
       {
-        path: "room",
-        element: <RoomList />,
+        path: "data",
+        element: <DataList />,
       },
     ],
   },

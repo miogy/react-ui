@@ -5,7 +5,7 @@ const initRoomList = [
   { id: 1, name: "room2", password: "456" },
   { id: 2, name: "room3", password: "789" },
 ];
-function RoomList() {
+function DataList() {
   const [roomList, setRoomList] = useState(initRoomList);
   const [password, setPassword] = useState(initRoomList.map(() => ""));
 
@@ -14,6 +14,7 @@ function RoomList() {
       <div className="App">
         <h1>Hello CodeSandbox</h1>
         <h2>Start editing to see some magic happen!</h2>
+        {/* getlist.map => password 개별 상태관리 */}
         <div>
           {/* 룸 배열 렌더링 */}
           {roomList.map((room, i) => {
@@ -59,4 +60,4 @@ function RoomList() {
   );
 }
 
-export default RoomList;
+export default DataList;

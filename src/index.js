@@ -11,6 +11,7 @@ import Login from "./page/Login";
 import Signup from "./page/Signup";
 import Home from "./page/Home";
 import DataList from "./page/DataList";
+import Toggle from "./page/Toggle";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "data",
         element: <DataList />,
+      },
+      {
+        path: "toggle",
+        element: <Toggle />,
       },
     ],
   },

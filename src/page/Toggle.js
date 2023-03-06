@@ -17,12 +17,14 @@ function Toggle() {
   return (
     <div style={{ width: "500px", height: "800px", margin: "0 auto" }}>
       <div style={{ width: "100%", height: "100px", margin: "0 auto" }}>
+        <h3>하나의 toggle사용시</h3>
         <button type="button" onClick={() => setToggle((prev) => !prev)}>
           {toggle ? <>close</> : <>open</>}
         </button>
         {toggle && <div>toggle open</div>}
       </div>
       <div>
+        <h3>여러개의 toggle 개별 관리</h3>
         <button type="button" onClick={() => handleClick(0)}>
           {activeButton === 0 ? <>close</> : <>open</>}
         </button>

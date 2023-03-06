@@ -24,7 +24,7 @@ function NavBar() {
           dataList
         </Link>
         <Link to="/toggle" style={{ marginRight: "20px" }}>
-          Toggle
+          Toggles
         </Link>
       </nav>
     </header>

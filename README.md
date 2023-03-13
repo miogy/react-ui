@@ -15,3 +15,4 @@ React에서 주로 사용하는 ui를 모아놓는 곳입니다.
 - Loaders : 여러가지 스타일의 loader
 - home : image slider 예정
 - dataList
+- toggle : 하나의 토글부터 여러개의 토글 개별 관리
